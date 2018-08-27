@@ -5,12 +5,9 @@ import "./Main.css";
 
 export default class Main extends Component {
   render() {
-    return (
-      <div>
-        {/* Nav Hamburger should go here */}
-        {/* conditional page rendering */}
-        <LandingPage />
-      </div>
-    );
+    return <LandingPage />;
   }
 }
+
+// {/* Nav Hamburger should go here */}
+// {/* conditional page rendering */}
