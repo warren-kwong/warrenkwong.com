@@ -2,6 +2,10 @@ import React, { Component } from "react";
 
 import "./LandingPage.css";
 
+import codeIcon from "../../assets/code.png";
+import cameraIcon from "../../assets/photo-camera.png";
+import headphonesIcon from "../../assets/headphones.png";
+
 export default class Main extends Component {
   render() {
     return (
@@ -10,15 +14,15 @@ export default class Main extends Component {
           <h1>WARREN KWONG</h1>
           <div className="subheader">
             <div className="icon">
-              <img src="../../assets/code.png" width="40" />
+              <img src={codeIcon} width="40" />
               <span>Developer</span>
             </div>
             <div className="icon">
-              <img src="../../assets/photo-camera.png" width="40" />
+              <img src={cameraIcon} width="40" />
               <span>Photographer</span>
             </div>
             <div className="icon">
-              <img src="../../assets/headphones.png" width="40" />
+              <img src={headphonesIcon} width="40" />
               <span>Music Enthusiast</span>
             </div>
           </div>
