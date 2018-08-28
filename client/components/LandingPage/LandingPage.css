@@ -30,3 +30,7 @@
   align-items: center;
   margin: 0 30px;
 }
+
+.icon img {
+  margin: 20px;
+}

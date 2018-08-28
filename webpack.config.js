@@ -19,7 +19,18 @@ module.exports = {
       { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
       { test: /\.jsx$/, exclude: /node_modules/, loader: "babel-loader" },
       { test: /\.css$/, use: ["style-loader", "css-loader"] },
-      { test: /\.png$/, loader: "file-loader" }
+      {
+        test: /\.png$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "assets/"
+            }
+          }
+        ]
+      }
     ]
   },
   plugins: [HtmlWebpackPluginConfig]
