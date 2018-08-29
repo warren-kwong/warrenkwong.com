@@ -9,18 +9,38 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   color: white;
 }
 
 .header {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 70px;
+  margin: 20px;
+}
+
+.header:hover {
+  color: #ffa500;
+}
+
+.header-left-letter {
+  margin: 40px 10px 20px;
+  width: 70px;
+  text-align: right;
+}
+
+.header-right-letter {
+  margin: 40px 10px 20px;
+  width: 70px;
+  text-align: left;
 }
 
 .divider {
   font-weight: 100;
-  font-size: 70px;
+  font-size: 100px;
+  align-self: center;
 }
 
 .subheader {
@@ -31,11 +51,17 @@
 .icon {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  margin: 0 30px;
+  width: 200px;
+  height: 50px;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.icon-hover {
+  color: orange;
 }
 
 .icon img {
-  margin: 20px;
+  margin: 20px 0;
 }
