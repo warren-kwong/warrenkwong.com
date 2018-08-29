@@ -30,11 +30,11 @@ export default class Main extends Component {
             >
               {this.state.hoverHeader && (
                 <div className="header">
-                  <span className="header-left-letter hover-text-color">
+                  <span className="header-left-letter hover-text-color letter-hover">
                     W A R R E N
                   </span>
                   <span className="divider">|</span>
-                  <span className="header-right-letter hover-text-color">
+                  <span className="header-right-letter hover-text-color letter-hover">
                     K W O N G
                   </span>
                 </div>

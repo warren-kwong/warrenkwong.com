@@ -23,14 +23,18 @@
 
 .header-left-letter {
   margin: 40px 10px 20px;
-  width: 500px;
+  min-width: 70px;
   text-align: right;
 }
 
 .header-right-letter {
   margin: 40px 10px 20px;
-  width: 500px;
+  min-width: 70px;
   text-align: left;
+}
+
+.letter-hover {
+  width: 500px;
 }
 
 .divider {
