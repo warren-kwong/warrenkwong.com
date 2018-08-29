@@ -6,6 +6,7 @@ export default class Main extends Component {
   constructor() {
     super();
     this.onHoverHandler = this.onHoverHandler.bind(this);
+    this.offHoverHandler = this.offHoverHandler.bind(this);
     this.state = {
       icons: ["developer", "photographer", "music enthusiast"],
       hoverHeader: false,
@@ -16,7 +17,11 @@ export default class Main extends Component {
   }
 
   onHoverHandler(text) {
-    this.setState({ [text]: !this.state[text] });
+    this.setState({ [text]: true });
+  }
+
+  offHoverHandler(text) {
+    this.setState({ [text]: false });
   }
 
   render() {
@@ -26,7 +31,7 @@ export default class Main extends Component {
           <div>
             <div
               onMouseEnter={() => this.onHoverHandler("hoverHeader")}
-              onMouseLeave={() => this.onHoverHandler("hoverHeader")}
+              onMouseLeave={() => this.offHoverHandler("hoverHeader")}
             >
               {this.state.hoverHeader && (
                 <div className="header">
@@ -51,7 +56,7 @@ export default class Main extends Component {
           <div className="subheader">
             <div
               onMouseEnter={() => this.onHoverHandler("hoverDeveloper")}
-              onMouseLeave={() => this.onHoverHandler("hoverDeveloper")}
+              onMouseLeave={() => this.offHoverHandler("hoverDeveloper")}
             >
               {this.state.hoverDeveloper && (
                 <div className="icon hover-text-color">
@@ -73,7 +78,7 @@ export default class Main extends Component {
             </div>
             <div
               onMouseEnter={() => this.onHoverHandler("hoverPhotographer")}
-              onMouseLeave={() => this.onHoverHandler("hoverPhotographer")}
+              onMouseLeave={() => this.offHoverHandler("hoverPhotographer")}
             >
               {this.state.hoverPhotographer && (
                 <div className="icon hover-text-color">
@@ -95,7 +100,7 @@ export default class Main extends Component {
             </div>
             <div
               onMouseEnter={() => this.onHoverHandler("hoverMusic")}
-              onMouseLeave={() => this.onHoverHandler("hoverMusic")}
+              onMouseLeave={() => this.offHoverHandler("hoverMusic")}
             >
               {this.state.hoverMusic && (
                 <div className="icon hover-text-color">
