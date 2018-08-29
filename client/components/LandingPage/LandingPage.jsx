@@ -7,7 +7,13 @@ export default class Main extends Component {
     return (
       <div className="landing-page">
         <div>
-          <h1>WARREN KWONG</h1>
+          <div>
+            <h1 className="header">
+              W <span className="divider">|</span> K
+              {/* W A R R E N <span className="divider">|</span> K W O N G */}
+            </h1>
+          </div>
+          {/*
           <div className="subheader">
             <div className="icon">
               <img
@@ -31,6 +37,7 @@ export default class Main extends Component {
               <span>Music Enthusiast</span>
             </div>
           </div>
+           */}
         </div>
       </div>
     );

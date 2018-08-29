@@ -1,5 +1,6 @@
 .landing-page {
-  background: url("https://s3-us-west-1.amazonaws.com/warrenkwong.com-assets/ocean.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://s3-us-west-1.amazonaws.com/warrenkwong.com-assets/ocean.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8,14 +9,18 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
   color: white;
 }
 
-.landing-page h1 {
+.header {
   text-align: center;
   font-weight: 400;
   font-size: 50px;
+}
+
+.divider {
+  font-weight: 100;
+  font-size: 70px;
 }
 
 .subheader {
