@@ -29,10 +29,14 @@ export default class Main extends Component {
               onMouseLeave={() => this.onHoverHandler("hoverHeader")}
             >
               {this.state.hoverHeader && (
-                <div className="header hover-text-color">
-                  <span className="header-left-letter">W A R R E N</span>
+                <div className="header">
+                  <span className="header-left-letter hover-text-color">
+                    W A R R E N
+                  </span>
                   <span className="divider">|</span>
-                  <span className="header-right-letter">K W O N G</span>
+                  <span className="header-right-letter hover-text-color">
+                    K W O N G
+                  </span>
                 </div>
               )}
               {!this.state.hoverHeader && (
