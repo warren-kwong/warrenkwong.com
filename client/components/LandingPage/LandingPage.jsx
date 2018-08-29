@@ -8,6 +8,7 @@ export default class Main extends Component {
     this.onHoverHandler = this.onHoverHandler.bind(this);
     this.state = {
       icons: ["developer", "photographer", "music enthusiast"],
+      hoverHeader: false,
       hoverDeveloper: false,
       hoverPhotographer: false,
       hoverMusic: false
@@ -23,10 +24,24 @@ export default class Main extends Component {
       <div className="landing-page">
         <div>
           <div>
-            <div className="header">
-              <span className="header-left-letter">W</span>
-              <span className="divider">|</span>
-              <span className="header-right-letter">K</span>
+            <div
+              onMouseEnter={() => this.onHoverHandler("hoverHeader")}
+              onMouseLeave={() => this.onHoverHandler("hoverHeader")}
+            >
+              {this.state.hoverHeader && (
+                <div className="header hover-text-color">
+                  <span className="header-left-letter">W A R R E N</span>
+                  <span className="divider">|</span>
+                  <span className="header-right-letter">K W O N G</span>
+                </div>
+              )}
+              {!this.state.hoverHeader && (
+                <div className="header">
+                  <span className="header-left-letter">W</span>
+                  <span className="divider">|</span>
+                  <span className="header-right-letter">K</span>
+                </div>
+              )}
             </div>
           </div>
           <div className="subheader">
@@ -35,7 +50,7 @@ export default class Main extends Component {
               onMouseLeave={() => this.onHoverHandler("hoverDeveloper")}
             >
               {this.state.hoverDeveloper && (
-                <div className="icon icon-hover">
+                <div className="icon hover-text-color">
                   <img
                     src="https://s3-us-west-1.amazonaws.com/warrenkwong.com-assets/code-orange.png"
                     width="40"
@@ -57,7 +72,7 @@ export default class Main extends Component {
               onMouseLeave={() => this.onHoverHandler("hoverPhotographer")}
             >
               {this.state.hoverPhotographer && (
-                <div className="icon icon-hover">
+                <div className="icon hover-text-color">
                   <img
                     src="https://s3-us-west-1.amazonaws.com/warrenkwong.com-assets/photo-camera-orange.png"
                     width="40"
@@ -79,7 +94,7 @@ export default class Main extends Component {
               onMouseLeave={() => this.onHoverHandler("hoverMusic")}
             >
               {this.state.hoverMusic && (
-                <div className="icon icon-hover">
+                <div className="icon hover-text-color">
                   <img
                     src="https://s3-us-west-1.amazonaws.com/warrenkwong.com-assets/headphones-orange.png"
                     width="40"

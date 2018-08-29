@@ -1,11 +1,16 @@
 import React, { Component } from "react";
 
-//  css
+import "./NavBar.css";
 
 export default class NavBar extends Component {
+  constructor() {
+    super();
+    this.state = {};
+  }
+
   render() {
     return (
-      <div>
+      <div className="menu">
         <div />
       </div>
     );

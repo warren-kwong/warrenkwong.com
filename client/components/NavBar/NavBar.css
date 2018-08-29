@@ -1,0 +1,8 @@
+.menu {
+  position: absolute;
+  background-color: pink;
+  min-height: 50px;
+  min-width: 50px;
+  top: 30px;
+  right: 30px;
+}

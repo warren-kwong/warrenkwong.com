@@ -21,19 +21,15 @@
   margin: 20px;
 }
 
-.header:hover {
-  color: #ffa500;
-}
-
 .header-left-letter {
   margin: 40px 10px 20px;
-  width: 70px;
+  width: 500px;
   text-align: right;
 }
 
 .header-right-letter {
   margin: 40px 10px 20px;
-  width: 70px;
+  width: 500px;
   text-align: left;
 }
 
@@ -53,12 +49,12 @@
   flex-direction: column;
   align-items: center;
   width: 200px;
-  height: 50px;
-  font-weight: 300;
-  font-size: 12px;
+  height: 120px;
+  font-weight: 100;
+  font-size: 14px;
 }
 
-.icon-hover {
+.hover-text-color {
   color: orange;
 }
 
