@@ -5,8 +5,10 @@ import "./LandingPage.css";
 export default class Main extends Component {
   constructor() {
     super();
-    this.onHoverHandler = this.onHoverHandler.bind(this);
-    this.offHoverHandler = this.offHoverHandler.bind(this);
+
+    // this.onHoverHandler = this.onHoverHandler.bind(this);
+    // this.offHoverHandler = this.offHoverHandler.bind(this);
+
     this.state = {
       icons: ["developer", "photographer", "music enthusiast"],
       hoverHeader: false,
@@ -28,13 +30,15 @@ export default class Main extends Component {
     return (
       <div className="landing-page">
         <div>
-          <div>
-            <div
-              onMouseEnter={() => this.onHoverHandler("hoverHeader")}
-              onMouseLeave={() => this.offHoverHandler("hoverHeader")}
-            >
+          <div
+          // onMouseEnter={() => this.onHoverHandler("hoverHeader")}
+          >
+            <div>
               {this.state.hoverHeader && (
-                <div className="header">
+                <div
+                  className="header"
+                  onMouseLeave={() => this.offHoverHandler("hoverHeader")}
+                >
                   <span className="header-left-letter hover-text-color letter-hover">
                     W A R R E N
                   </span>
@@ -45,7 +49,10 @@ export default class Main extends Component {
                 </div>
               )}
               {!this.state.hoverHeader && (
-                <div className="header">
+                <div
+                  className="header"
+                  onMouseEnter={() => this.onHoverHandler("hoverHeader")}
+                >
                   <span className="header-left-letter">W</span>
                   <span className="divider">|</span>
                   <span className="header-right-letter">K</span>
@@ -53,16 +60,15 @@ export default class Main extends Component {
               )}
             </div>
           </div>
+          <div className="coming-soon">WEBSITE COMING SOON</div>
           <div className="subheader">
-            <div
-              onMouseEnter={() => this.onHoverHandler("hoverDeveloper")}
-              onMouseLeave={() => this.offHoverHandler("hoverDeveloper")}
-            >
+            <div>
               {this.state.hoverDeveloper && (
                 <div className="icon hover-text-color">
                   <img
                     src="https://s3-us-west-1.amazonaws.com/warrenkwong.com-assets/code-orange.png"
                     width="40"
+                    onMouseLeave={() => this.offHoverHandler("hoverDeveloper")}
                   />
                   <span>developer</span>
                 </div>
@@ -72,19 +78,20 @@ export default class Main extends Component {
                   <img
                     src="https://s3-us-west-1.amazonaws.com/warrenkwong.com-assets/code.png"
                     width="40"
+                    onMouseEnter={() => this.onHoverHandler("hoverDeveloper")}
                   />
                 </div>
               )}
             </div>
-            <div
-              onMouseEnter={() => this.onHoverHandler("hoverPhotographer")}
-              onMouseLeave={() => this.offHoverHandler("hoverPhotographer")}
-            >
+            <div>
               {this.state.hoverPhotographer && (
                 <div className="icon hover-text-color">
                   <img
                     src="https://s3-us-west-1.amazonaws.com/warrenkwong.com-assets/photo-camera-orange.png"
                     width="40"
+                    onMouseLeave={() =>
+                      this.offHoverHandler("hoverPhotographer")
+                    }
                   />
                   <span>photographer</span>
                 </div>
@@ -94,19 +101,20 @@ export default class Main extends Component {
                   <img
                     src="https://s3-us-west-1.amazonaws.com/warrenkwong.com-assets/photo-camera.png"
                     width="40"
+                    onMouseEnter={() =>
+                      this.onHoverHandler("hoverPhotographer")
+                    }
                   />
                 </div>
               )}
             </div>
-            <div
-              onMouseEnter={() => this.onHoverHandler("hoverMusic")}
-              onMouseLeave={() => this.offHoverHandler("hoverMusic")}
-            >
+            <div>
               {this.state.hoverMusic && (
                 <div className="icon hover-text-color">
                   <img
                     src="https://s3-us-west-1.amazonaws.com/warrenkwong.com-assets/headphones-orange.png"
                     width="40"
+                    onMouseLeave={() => this.offHoverHandler("hoverMusic")}
                   />
                   <span>music enthusiast</span>
                 </div>
@@ -116,6 +124,7 @@ export default class Main extends Component {
                   <img
                     src="https://s3-us-west-1.amazonaws.com/warrenkwong.com-assets/headphones.png"
                     width="40"
+                    onMouseEnter={() => this.onHoverHandler("hoverMusic")}
                   />
                 </div>
               )}

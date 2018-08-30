@@ -43,6 +43,11 @@
   align-self: center;
 }
 
+.coming-soon {
+  text-align: center;
+  margin: 20px;
+}
+
 .subheader {
   display: flex;
   justify-content: center;
@@ -63,5 +68,5 @@
 }
 
 .icon img {
-  margin: 20px 0;
+  margin: 20px;
 }
