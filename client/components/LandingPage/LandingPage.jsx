@@ -30,6 +30,7 @@ export default class Main extends Component {
     return (
       <div className="landing-page">
         <div>
+          {/* header "Warren|Kwong" */}
           <div>
             <div>
               {this.state.hoverHeader && (
@@ -58,6 +59,7 @@ export default class Main extends Component {
               )}
             </div>
           </div>
+          {/* subheader icon row  */}
           <div className="subheader">
             <div>
               {this.state.hoverDeveloper && (
@@ -127,6 +129,7 @@ export default class Main extends Component {
               )}
             </div>
           </div>
+          {/* Coming Soon Message */}
           <div className="coming-soon">WEBSITE COMING SOON</div>
         </div>
       </div>
