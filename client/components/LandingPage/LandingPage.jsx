@@ -67,6 +67,7 @@ export default class Main extends Component {
                 <div className="icon hover-text-color">
                   <img
                     src="https://s3-us-west-1.amazonaws.com/warrenkwong.com-assets/code-orange.png"
+                    alt="developer icon"
                     width="40"
                     onMouseLeave={() => this.offHoverHandler("hoverDeveloper")}
                   />
@@ -77,6 +78,7 @@ export default class Main extends Component {
                 <div className="icon">
                   <img
                     src="https://s3-us-west-1.amazonaws.com/warrenkwong.com-assets/code.png"
+                    alt="developer icon"
                     width="40"
                     onMouseEnter={() => this.onHoverHandler("hoverDeveloper")}
                   />
@@ -90,6 +92,7 @@ export default class Main extends Component {
                   <img
                     src="https://s3-us-west-1.amazonaws.com/warrenkwong.com-assets/photo-camera-orange.png"
                     width="40"
+                    alt="photography icon"
                     onMouseLeave={() =>
                       this.offHoverHandler("hoverPhotographer")
                     }
@@ -102,6 +105,7 @@ export default class Main extends Component {
                   <img
                     src="https://s3-us-west-1.amazonaws.com/warrenkwong.com-assets/photo-camera.png"
                     width="40"
+                    alt="photography icon"
                     onMouseEnter={() =>
                       this.onHoverHandler("hoverPhotographer")
                     }
@@ -115,6 +119,7 @@ export default class Main extends Component {
                 <div className="icon hover-text-color">
                   <img
                     src="https://s3-us-west-1.amazonaws.com/warrenkwong.com-assets/headphones-orange.png"
+                    alt="music icon"
                     width="40"
                     onMouseLeave={() => this.offHoverHandler("hoverMusic")}
                   />
@@ -125,6 +130,7 @@ export default class Main extends Component {
                 <div className="icon">
                   <img
                     src="https://s3-us-west-1.amazonaws.com/warrenkwong.com-assets/headphones.png"
+                    alt="music icon"
                     width="40"
                     onMouseEnter={() => this.onHoverHandler("hoverMusic")}
                   />
