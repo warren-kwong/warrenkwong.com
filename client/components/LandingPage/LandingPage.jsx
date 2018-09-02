@@ -61,6 +61,7 @@ export default class Main extends Component {
           </div>
           {/* subheader icon row  */}
           <div className="subheader">
+            {/* developer icon  */}
             <div>
               {this.state.hoverDeveloper && (
                 <div className="icon hover-text-color">
@@ -82,6 +83,7 @@ export default class Main extends Component {
                 </div>
               )}
             </div>
+            {/* photographer icon */}
             <div>
               {this.state.hoverPhotographer && (
                 <div className="icon hover-text-color">
@@ -107,6 +109,7 @@ export default class Main extends Component {
                 </div>
               )}
             </div>
+            {/* music enthusiast icon */}
             <div>
               {this.state.hoverMusic && (
                 <div className="icon hover-text-color">
