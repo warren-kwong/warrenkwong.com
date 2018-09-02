@@ -30,9 +30,7 @@ export default class Main extends Component {
     return (
       <div className="landing-page">
         <div>
-          <div
-          // onMouseEnter={() => this.onHoverHandler("hoverHeader")}
-          >
+          <div>
             <div>
               {this.state.hoverHeader && (
                 <div
@@ -60,7 +58,6 @@ export default class Main extends Component {
               )}
             </div>
           </div>
-          <div className="coming-soon">WEBSITE COMING SOON</div>
           <div className="subheader">
             <div>
               {this.state.hoverDeveloper && (
@@ -130,6 +127,7 @@ export default class Main extends Component {
               )}
             </div>
           </div>
+          <div className="coming-soon">WEBSITE COMING SOON</div>
         </div>
       </div>
     );
