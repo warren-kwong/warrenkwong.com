@@ -1,8 +1,37 @@
-.menu {
+.nav-container {
   position: absolute;
-  background-color: pink;
-  min-height: 50px;
-  min-width: 50px;
   top: 30px;
   right: 30px;
+  /* border: 1px red solid; */
+  font-size: 14px;
+  color: white;
+  padding: 15px 15px 5px 15px;
+}
+
+.nav-container-hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55));
+}
+
+.nav-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav {
+  font-weight: 300;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav li {
+  margin: 10px 0;
+  text-align: right;
+}
+
+.nav li:hover {
+  color: orange;
 }
