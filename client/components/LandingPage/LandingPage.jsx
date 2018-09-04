@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import "./LandingPage.css";
 
-export default class Main extends Component {
+export default class LandingPage extends Component {
   constructor() {
     super();
 
@@ -139,7 +139,7 @@ export default class Main extends Component {
             </div>
           </div>
           {/* Coming Soon Message */}
-          <div className="coming-soon">WEBSITE COMING SOON</div>
+          {/* <div className="coming-soon">WEBSITE COMING SOON</div> */}
         </div>
       </div>
     );

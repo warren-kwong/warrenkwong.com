@@ -1,15 +1,22 @@
 import React, { Component } from "react";
-import LandingPage from "../LandingPage/LandingPage.jsx";
 import NavBar from "../NavBar/NavBar.jsx";
+import About from "../About/About.jsx";
+import LandingPage from "../LandingPage/LandingPage.jsx";
 
 import "./Main.css";
 
 export default class Main extends Component {
+  constructor() {
+    super();
+    this.state = {};
+  }
+
   render() {
     return (
       <div className="main-container">
         <NavBar />
-        <LandingPage />
+        <About />
+        {/* <LandingPage /> */}
       </div>
     );
   }

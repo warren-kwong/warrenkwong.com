@@ -43,6 +43,7 @@ export default class NavBar extends Component {
         {this.state.hoverMenu && (
           <div className="nav">
             <ul>
+              <li>HOME</li>
               <li>ABOUT</li>
               <li>PROJECTS</li>
               <li>RESUME</li>
