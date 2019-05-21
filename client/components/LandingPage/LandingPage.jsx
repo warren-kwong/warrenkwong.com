@@ -10,7 +10,6 @@ export default class LandingPage extends Component {
     // this.offHoverHandler = this.offHoverHandler.bind(this);
 
     this.state = {
-      icons: ["developer", "photographer", "music enthusiast"],
       hoverHeader: false,
       hoverDeveloper: false,
       hoverPhotographer: false,
@@ -117,7 +116,7 @@ export default class LandingPage extends Component {
                 </div>
               )}
             </div>
-            {/* music enthusiast icon */}
+            {/* headphones icon */}
             <div>
               {this.state.hoverMusic && (
                 <a className="icon-link" href="https://soundcloud.com/imhobbes" target="_blank">
@@ -128,7 +127,7 @@ export default class LandingPage extends Component {
                       width="40"
                       onMouseLeave={() => this.offHoverHandler("hoverMusic")}
                     />
-                    <span>music enthusiast</span>
+                    <span>producer</span>
                   </div>
                 </a>
               )}
@@ -144,8 +143,6 @@ export default class LandingPage extends Component {
               )}
             </div>
           </div>
-          {/* Coming Soon Message */}
-          {/* <div className="coming-soon">WEBSITE COMING SOON</div> */}
         </div>
       </div>
     );
