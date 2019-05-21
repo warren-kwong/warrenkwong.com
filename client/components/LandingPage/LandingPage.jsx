@@ -120,27 +120,27 @@ export default class LandingPage extends Component {
             {/* music enthusiast icon */}
             <div>
               {this.state.hoverMusic && (
-                <div className="icon hover-text-color">
-                  <img
-                    src="https://s3-us-west-1.amazonaws.com/warrenkwong.com-assets/headphones-orange.png"
-                    alt="music icon"
-                    width="40"
-                    onMouseLeave={() => this.offHoverHandler("hoverMusic")}
-                  />
-                  <span>music enthusiast</span>
-                </div>
-              )}
-              {!this.state.hoverMusic && (
                 <a className="icon-link" href="https://soundcloud.com/imhobbes" target="_blank">
-                  <div className="icon">
+                  <div className="icon hover-text-color">
                     <img
-                      src="https://s3-us-west-1.amazonaws.com/warrenkwong.com-assets/headphones.png"
+                      src="https://s3-us-west-1.amazonaws.com/warrenkwong.com-assets/headphones-orange.png"
                       alt="music icon"
                       width="40"
-                      onMouseEnter={() => this.onHoverHandler("hoverMusic")}
+                      onMouseLeave={() => this.offHoverHandler("hoverMusic")}
                     />
+                    <span>music enthusiast</span>
                   </div>
                 </a>
+              )}
+              {!this.state.hoverMusic && (
+                <div className="icon">
+                  <img
+                    src="https://s3-us-west-1.amazonaws.com/warrenkwong.com-assets/headphones.png"
+                    alt="music icon"
+                    width="40"
+                    onMouseEnter={() => this.onHoverHandler("hoverMusic")}
+                  />
+                </div>
               )}
             </div>
           </div>
