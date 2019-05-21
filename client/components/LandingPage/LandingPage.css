@@ -63,6 +63,15 @@
   font-size: 14px;
 }
 
+.icon-link { 
+  text-decoration: none;
+}
+
+.icon-link:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .hover-text-color {
   color: orange;
 }

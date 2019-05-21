@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import NavBar from "../NavBar/NavBar.jsx";
-import About from "../About/About.jsx";
-import LandingPage from "../LandingPage/LandingPage.jsx";
+import React, { Component } from 'react';
+import NavBar from '../NavBar/NavBar.jsx';
+import About from '../About/About.jsx';
+import LandingPage from '../LandingPage/LandingPage.jsx';
 
-import "./Main.css";
+import './Main.css';
 
 export default class Main extends Component {
   constructor() {
@@ -14,13 +14,10 @@ export default class Main extends Component {
   render() {
     return (
       <div className="main-container">
-        <NavBar />
-        <About />
-        {/* <LandingPage /> */}
+        {/* <NavBar /> */}
+        {/* <About /> */}
+        <LandingPage />
       </div>
     );
   }
 }
-
-// {/* Nav Hamburger should go here */}
-// {/* conditional page rendering */}
